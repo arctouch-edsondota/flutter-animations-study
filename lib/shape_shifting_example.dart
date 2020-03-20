@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:animations_poc/menu.dart';
+import 'package:animations_poc/my_scaffold.dart';
 import 'package:flutter/material.dart';
 
 double randomBorderRadius() => Random().nextDouble() * 64;
@@ -36,11 +37,8 @@ class _ShapeShiftingRouteState extends State<ShapeShiftingRoute> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        drawer: Menu(),
-        appBar: AppBar(
-          title: Text('Shape-shifting exame'),
-        ),
+      home: MyScaffold(
+        title: Text('Shape-shifting exame'),
         body: SafeArea(
           child: Center(
             child: Column(

@@ -1,4 +1,5 @@
 import 'package:animations_poc/menu.dart';
+import 'package:animations_poc/my_scaffold.dart';
 import 'package:flutter/material.dart';
 
 const owl_url = 'https://raw.githubusercontent.com/flutter/website/master/src/images/owl.jpg';
@@ -14,11 +15,8 @@ class _AnimatedOpacityRouteState extends State<AnimatedOpacityRoute> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        drawer: Menu(),
-        appBar: AppBar(
-          title: Text('Animated Opacity'),
-        ),
+      home: MyScaffold(
+        title: Text('Animated Opacity'),
         body: SafeArea(
           child: Column(
             children: <Widget>[
