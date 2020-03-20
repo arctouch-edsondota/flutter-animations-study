@@ -1,18 +1,31 @@
+import 'package:animations_poc/animated_opacity_example.dart';
 import 'package:animations_poc/menu.dart';
+import 'package:animations_poc/my_scaffold.dart';
+import 'package:animations_poc/shape_shifting_example.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        drawer: Menu(),
-        appBar: AppBar(
-          title: Text('Animation Examples'),
-        ),
-        body: Center(
-          child: Text('Use the menu to navigate through the examples.'),
-        ),
+      initialRoute: HomeRoute.routeName,
+      routes: {
+        HomeRoute.routeName: (context) => HomeRoute(),
+        ShapeShiftingRoute.routeName: (context) => ShapeShiftingRoute(),
+        AnimatedOpacityRoute.routeName: (context) => AnimatedOpacityRoute(),
+      },
+    );
+  }
+}
+
+class HomeRoute extends StatelessWidget {
+  static String routeName = 'home_route';
+  @override
+  Widget build(BuildContext context) {
+    return MyScaffold(
+      title: Text('Animation Examples'),
+      body: Center(
+        child: Text('Use the menu to navigate through the examples.'),
       ),
     );
   }
