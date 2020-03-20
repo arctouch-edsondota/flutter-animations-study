@@ -1,5 +1,5 @@
-import 'package:animations_poc/animated_opacity_example.dart';
-import 'package:animations_poc/shape_shifting_example.dart';
+import 'package:animations_poc/examples/animated_opacity_example.dart';
+import 'package:animations_poc/examples/shape_shifting_example.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
