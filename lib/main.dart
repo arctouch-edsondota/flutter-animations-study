@@ -1,5 +1,5 @@
 import 'package:animations_poc/examples/animated_opacity_example.dart';
-import 'package:animations_poc/menu.dart';
+import 'package:animations_poc/examples/animation_controller_example.dart';
 import 'package:animations_poc/my_scaffold.dart';
 import 'package:animations_poc/examples/shape_shifting_example.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         HomeRoute.routeName: (context) => HomeRoute(),
         ShapeShiftingRoute.routeName: (context) => ShapeShiftingRoute(),
         AnimatedOpacityRoute.routeName: (context) => AnimatedOpacityRoute(),
+        AnimationControllerRoute.routeName: (context) => AnimationControllerRoute(),
       },
     );
   }

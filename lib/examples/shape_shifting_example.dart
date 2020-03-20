@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:animations_poc/menu.dart';
 import 'package:animations_poc/my_scaffold.dart';
 import 'package:flutter/material.dart';
 
